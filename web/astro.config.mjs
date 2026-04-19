@@ -21,20 +21,26 @@ export default defineConfig({
           autogenerate: { directory: 'fit-intro' },
         },
         {
-          label: 'Getting Started',
-          autogenerate: { directory: 'getting-started' },
-        },
-        {
-          label: 'Writing',
-          autogenerate: { directory: 'writing' },
-        },
-        {
-          label: 'Publishing',
-          autogenerate: { directory: 'publishing' },
-        },
-        {
           label: 'Help',
-          autogenerate: { directory: 'help' },
+          items: [
+            { label: 'Overview', slug: 'help' },
+            {
+              label: 'Getting Started',
+              autogenerate: { directory: 'getting-started' },
+            },
+            {
+              label: 'Writing',
+              autogenerate: { directory: 'writing' },
+            },
+            {
+              label: 'Publishing',
+              autogenerate: { directory: 'publishing' },
+            },
+            {
+              label: 'Search',
+              autogenerate: { directory: 'help/search' },
+            },
+          ],
         },
       ],
       customCss: ['./src/styles/custom.css'],
