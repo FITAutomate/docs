@@ -187,3 +187,151 @@ html[data-has-hero] .content-panel .hero {
   padding-top: 5rem;
   padding-bottom: 2rem;
 }
+
+/* Splash body: motivation band under hero */
+.fit-home-motivation {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.fit-home-motivation__emoji {
+  display: block;
+  font-size: clamp(3.5rem, 12vw, 6.5rem);
+  line-height: 1;
+  margin: 0 auto 1.25rem;
+  filter: drop-shadow(0 6px 20px rgba(0, 124, 232, 0.35));
+  user-select: none;
+}
+
+.fit-home-motivation__lead {
+  max-width: 52ch;
+  margin: 0 auto 1.75rem;
+  font-size: var(--sl-text-lg);
+  line-height: 1.55;
+  color: var(--fit-text-muted);
+  text-wrap: balance;
+}
+
+.fit-home-motivation__lead strong {
+  color: var(--fit-text-primary);
+  font-weight: 600;
+}
+
+.fit-home-motivation__quote {
+  margin: 0 auto;
+  max-width: 46ch;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--fit-blue);
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: color-mix(in srgb, var(--fit-blue) 12%, transparent);
+  text-align: left;
+}
+
+.fit-home-motivation__quote p {
+  margin: 0 0 0.75rem;
+  font-size: var(--sl-text-lg);
+  font-style: italic;
+  color: var(--fit-text-primary);
+  line-height: 1.45;
+}
+
+.fit-home-motivation__quote cite {
+  display: block;
+  font-size: var(--sl-text-sm);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--fit-text-accent);
+}
+
+/* Welcome (/fit/) — infrastructure diagram above card grid */
+.fit-welcome-diagram {
+  margin: 0 0 2rem;
+  max-width: min(100%, 56rem);
+  margin-inline: auto;
+}
+
+.fit-welcome-diagram__link {
+  display: block;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  outline-offset: 3px;
+}
+
+.fit-welcome-diagram__link:focus-visible {
+  outline: 2px solid var(--fit-blue);
+}
+
+.fit-welcome-diagram__link:hover img {
+  border-color: color-mix(in srgb, var(--fit-blue) 45%, var(--fit-border) 55%);
+}
+
+.fit-welcome-diagram img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+  border: 1px solid var(--fit-border);
+  background: color-mix(in srgb, var(--sl-color-bg) 85%, var(--fit-border) 15%);
+  transition: border-color 0.15s ease;
+}
+
+/* Welcome Quick Launch — Starlight has no Astro Docs “grid cards” CSS; use explicit layout */
+.fit-launch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.fit-launch-card {
+  margin: 0;
+  padding: 1rem 1.125rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--fit-border);
+  background: color-mix(in srgb, var(--sl-color-bg) 94%, var(--fit-blue) 6%);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--fit-border) 35%, transparent);
+}
+
+/* Lucide-style stroke icons (inline SVG) + heading: restrained FIT blue */
+.fit-launch-card__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+  font-size: var(--sl-text-base);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: color-mix(in srgb, var(--fit-blue) 86%, var(--fit-text-muted) 14%);
+}
+
+.fit-launch-card__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: inherit;
+}
+
+.fit-launch-card__icon svg {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.fit-launch-card__list {
+  margin: 0;
+  padding-left: 1.15rem;
+  list-style: disc;
+}
+
+.fit-launch-card__list li {
+  margin: 0.35rem 0;
+  line-height: 1.45;
+}
+
+.fit-launch-card__list a {
+  color: var(--fit-text-accent);
+  text-underline-offset: 0.14em;
+}
+
+.fit-launch-card__list a:hover {
+  color: var(--fit-blue);
+}

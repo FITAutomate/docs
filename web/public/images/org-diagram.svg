@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Organization diagram placeholder">
+  <rect width="800" height="450" fill="#1e2d3d" rx="8"/>
+  <text x="400" y="200" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Replace this file with your org diagram</text>
+  <text x="400" y="230" fill="#64748b" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">public/images/org-diagram.svg</text>
+</svg>

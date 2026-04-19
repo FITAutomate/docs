@@ -11,10 +11,13 @@ hero:
       icon: right-arrow
 ---
 
-FIT Automate Docs is your internal library for procedures, product knowledge, and operating guidance.
-
-Need the doc-site guide? Use [Help](/help/). Otherwise open **[Welcome](/fit/)** for the FIT Automate launchpad.
-
-<div class="fit-home-canvas">
-  <img src="/images/mountains-abstract.svg" alt="FIT Automate Docs mountainscape preview" />
-</div>
+<section class="fit-home-motivation" aria-label="Momentum">
+  <span class="fit-home-motivation__emoji" aria-hidden="true">✈️</span>
+  <p class="fit-home-motivation__lead">
+    John — you’re pulling something ambitious together: not a one-off here and there, but <strong>FIT Automate</strong> as a real platform at scale. This site is your operating layer — procedures, knowledge, and repeatability — so the team can fly in formation while you build altitude.
+  </p>
+  <blockquote class="fit-home-motivation__quote">
+    <p>An entrepreneur is someone who jumps off a cliff and builds a plane on the way down.</p>
+    <cite>Reid Hoffman</cite>
+  </blockquote>
+</section>
