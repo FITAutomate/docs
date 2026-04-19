@@ -1,0 +1,189 @@
+:root {
+  --fit-blue: #007CE8;
+  --fit-green: #1CD000;
+  --fit-blue-dark-text: #60a5fa;
+
+  --fit-bg-sidebar: #1e2d3d;
+  --fit-bg-content: #253347;
+  --fit-border: #334155;
+  --fit-text-primary: #e2e8f0;
+  --fit-text-muted: #94a3b8;
+  --fit-text-subtle: #a0b2c6;
+  --fit-nav-active-text: #0b1220;
+  --fit-hero-overlay: linear-gradient(
+    to bottom,
+    rgba(8, 12, 20, 0.58) 0%,
+    rgba(8, 12, 20, 0.46) 46%,
+    rgba(8, 12, 20, 0.34) 100%
+  );
+
+  --sl-font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --sl-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --sl-color-accent-low: var(--fit-bg-sidebar);
+  --sl-color-accent: var(--fit-blue);
+  --sl-color-accent-high: var(--fit-blue-dark-text);
+
+  --sl-color-text: var(--fit-text-primary);
+  --sl-color-text-accent: var(--fit-blue);
+  --sl-color-text-invert: #ffffff;
+
+  --sl-color-bg: var(--fit-bg-content);
+  --sl-color-bg-nav: var(--fit-bg-sidebar);
+  --sl-color-bg-sidebar: var(--fit-bg-sidebar);
+  --sl-color-bg-inline-code: color-mix(in srgb, var(--fit-bg-content) 70%, #000000 30%);
+  --sl-color-bg-accent: var(--fit-blue);
+
+  --sl-color-hairline: var(--fit-border);
+  --sl-color-hairline-light: var(--fit-border);
+  --sl-color-hairline-shade: var(--fit-border);
+
+  --sl-color-white: var(--fit-text-primary);
+  --sl-color-gray-1: var(--fit-text-primary);
+  --sl-color-gray-2: var(--fit-text-muted);
+  --sl-color-gray-3: var(--fit-text-subtle);
+  --sl-color-gray-4: var(--fit-text-subtle);
+  --sl-color-gray-5: var(--fit-border);
+  --sl-color-gray-6: var(--fit-bg-sidebar);
+  --sl-color-gray-7: var(--fit-bg-content);
+  --sl-color-black: var(--fit-bg-content);
+
+  --sl-color-green: var(--fit-green);
+  --sl-color-green-high: var(--fit-green);
+  --sl-color-green-low: color-mix(in srgb, var(--fit-green) 20%, var(--fit-bg-content) 80%);
+}
+
+:root[data-theme='light'] {
+  --fit-bg-sidebar: #e2e8f0;
+  --fit-bg-content: #F3F4F7;
+  --fit-border: #cbd5e1;
+  --fit-text-primary: #0f172a;
+  --fit-text-muted: #475569;
+  --fit-text-subtle: #475569;
+  --fit-nav-active-text: #0b1220;
+  --fit-hero-overlay: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.22) 0%,
+    rgba(15, 23, 42, 0.16) 46%,
+    rgba(15, 23, 42, 0.10) 100%
+  );
+
+  --sl-color-accent-low: #dbeafe;
+  --sl-color-accent: var(--fit-blue);
+  --sl-color-accent-high: var(--fit-blue);
+
+  --sl-color-text: var(--fit-text-primary);
+  --sl-color-text-accent: var(--fit-blue);
+  --sl-color-text-invert: #ffffff;
+
+  --sl-color-bg: var(--fit-bg-content);
+  --sl-color-bg-nav: var(--fit-bg-content);
+  --sl-color-bg-sidebar: var(--fit-bg-sidebar);
+  --sl-color-bg-inline-code: #e2e8f0;
+  --sl-color-bg-accent: var(--fit-blue);
+
+  --sl-color-hairline: var(--fit-border);
+  --sl-color-hairline-light: var(--fit-border);
+  --sl-color-hairline-shade: var(--fit-border);
+
+  --sl-color-white: var(--fit-text-primary);
+  --sl-color-gray-1: var(--fit-text-primary);
+  --sl-color-gray-2: var(--fit-text-muted);
+  --sl-color-gray-3: var(--fit-text-muted);
+  --sl-color-gray-4: var(--fit-text-subtle);
+  --sl-color-gray-5: var(--fit-border);
+  --sl-color-gray-6: #e2e8f0;
+  --sl-color-gray-7: var(--fit-bg-content);
+  --sl-color-black: #ffffff;
+
+  --sl-color-green: var(--fit-green);
+  --sl-color-green-high: var(--fit-green);
+  --sl-color-green-low: #dcfce7;
+}
+
+/* Brand-faithful fallback profile.
+   Toggle by adding class `fit-brand` to the html element in browser devtools. */
+html.fit-brand {
+  --fit-text-subtle: #64748b;
+  --fit-nav-active-text: #ffffff;
+  --fit-hero-overlay: linear-gradient(
+    to bottom,
+    rgba(8, 12, 20, 0.44) 0%,
+    rgba(8, 12, 20, 0.32) 46%,
+    rgba(8, 12, 20, 0.22) 100%
+  );
+}
+
+html.fit-brand[data-theme='light'] {
+  --fit-text-subtle: #94a3b8;
+  --fit-nav-active-text: #ffffff;
+  --fit-hero-overlay: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.26) 0%,
+    rgba(15, 23, 42, 0.18) 46%,
+    rgba(15, 23, 42, 0.12) 100%
+  );
+}
+
+/* Keep markdown-inserted image markup inert on landing; hero uses panel background. */
+.fit-home-canvas {
+  display: none;
+}
+
+/* Keep active nav state explicitly FIT blue in both modes. */
+.sidebar-pane a[aria-current='page'] {
+  background-color: var(--fit-blue);
+  color: var(--fit-nav-active-text);
+}
+
+/* Ghost hero button on dark surfaces uses handoff blue text tone. */
+:root:not([data-theme='light']) .sl-link-button.minimal {
+  color: var(--fit-blue-dark-text);
+  border-color: var(--fit-blue-dark-text);
+}
+
+/* Landing page full-bleed hero image (only pages with hero template). */
+html[data-has-hero] .content-panel {
+  position: relative;
+  background-image: url('/images/mountains-abstract.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+html[data-has-hero] .content-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--fit-hero-overlay);
+  z-index: 0;
+}
+
+html[data-has-hero] .content-panel .sl-container {
+  position: relative;
+  min-height: calc(100vh - 4rem);
+}
+
+html[data-has-hero] .content-panel .hero,
+html[data-has-hero] .content-panel .sl-markdown-content,
+html[data-has-hero] .content-panel footer {
+  position: relative;
+  z-index: 1;
+}
+
+html[data-has-hero] .content-panel .sl-markdown-content {
+  max-width: 72ch;
+  padding: 1.25rem 1.25rem 1rem;
+  border-radius: 0.75rem;
+  background: color-mix(in srgb, var(--sl-color-bg) 72%, transparent 28%);
+}
+
+html[data-has-hero] .content-panel .sl-markdown-content a {
+  text-underline-offset: 0.16em;
+}
+
+html[data-has-hero] .content-panel .hero {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}

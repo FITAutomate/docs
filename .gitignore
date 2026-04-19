@@ -1,0 +1,18 @@
+# Root-level ignores for FIT Automate docs
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+*.out
+*.err
+
+# Keep web build artifacts out of root-level git views if copied
+web/node_modules/
+web/dist/
+web/.astro/
