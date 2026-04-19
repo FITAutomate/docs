@@ -9,7 +9,17 @@ export const collections = {
     schema: docsSchema({
       extend: z.object({
         category: z
-          .enum(['fit-intro', 'getting-started', 'writing', 'publishing', 'help'])
+          .enum([
+            'fit',
+            'fit-intro',
+            'finance',
+            'marketing',
+            'operations',
+            'getting-started',
+            'writing',
+            'publishing',
+            'help',
+          ])
           .optional(),
         audience: z.array(z.enum(['user', 'editor', 'operator'])).optional(),
         status: z.enum(['current', 'deprecated', 'research']).default('current'),

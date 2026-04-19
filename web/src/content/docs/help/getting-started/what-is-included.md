@@ -9,7 +9,7 @@ FIT Docs Lite includes a usable starter library, not just empty placeholders.
 
 ## Baseline includes
 
-- section landing pages for `FIT Intro`, `Getting Started`, `Writing`, and `Publishing`
+- a `FIT` area with a [Welcome](/fit/) page, plus `Help` pages for `Getting Started`, `Writing`, and `Publishing`
 - starter topic pages for onboarding, searching, drafting, and publishing steps
 - simple page structure that works for non-technical editors
 - internal links that guide first-run contributors to the next step

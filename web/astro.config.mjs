@@ -15,29 +15,56 @@ export default defineConfig({
       editLink: {
         baseUrl: 'https://github.com/FITAutomate/docs/edit/main/web/',
       },
+      head: [
+        {
+          tag: 'script',
+          attrs: { defer: true, src: '/fit-sidebar-accordion.js' },
+        },
+      ],
       sidebar: [
         {
-          label: 'FIT Intro',
-          autogenerate: { directory: 'fit-intro' },
+          label: 'FIT',
+          collapsed: true,
+          autogenerate: { directory: 'fit' },
+        },
+        {
+          label: 'Finance',
+          collapsed: true,
+          autogenerate: { directory: 'finance' },
+        },
+        {
+          label: 'Marketing',
+          collapsed: true,
+          autogenerate: { directory: 'marketing' },
+        },
+        {
+          label: 'Operations',
+          collapsed: true,
+          autogenerate: { directory: 'operations' },
         },
         {
           label: 'Help',
+          collapsed: true,
           items: [
             { label: 'Overview', slug: 'help' },
             {
               label: 'Getting Started',
-              autogenerate: { directory: 'getting-started' },
+              collapsed: true,
+              autogenerate: { directory: 'help/getting-started' },
             },
             {
               label: 'Writing',
-              autogenerate: { directory: 'writing' },
+              collapsed: true,
+              autogenerate: { directory: 'help/writing' },
             },
             {
               label: 'Publishing',
-              autogenerate: { directory: 'publishing' },
+              collapsed: true,
+              autogenerate: { directory: 'help/publishing' },
             },
             {
               label: 'Search',
+              collapsed: true,
               autogenerate: { directory: 'help/search' },
             },
           ],

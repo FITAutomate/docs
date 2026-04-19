@@ -5,12 +5,11 @@ sidebar:
   order: 1
 ---
 
-FIT Docs Lite starts with four top-level sections:
+The site is organized in top-level areas, for example:
 
-- `FIT Intro`: what this template is and how it works
-- `Getting Started`: first-run onboarding and orientation
-- `Writing`: how to create and improve content safely
-- `Publishing`: how to check, commit, push, and publish updates
+- `FIT`: launchpad and day-to-day links (start at [Welcome](/fit/))
+- `Help` (this section): first-run orientation, including `Getting Started`, `Writing`, and `Publishing`
+- other areas: Finance, Marketing, Operations, and the rest of the doc set
 
 ## How to use this structure
 

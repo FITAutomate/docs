@@ -6,21 +6,14 @@ hero:
   title: FIT Automate Docs
   tagline: Procedures, product knowledge, and operating guidance in one searchable site.
   actions:
-    - text: Start with FIT Intro
-      link: /fit-intro/
+    - text: Welcome
+      link: /fit/
       icon: right-arrow
 ---
 
-FIT Automate Docs is the working knowledge base for procedures, product context, and repeatable operating guidance.
+FIT Automate Docs is your internal library for procedures, product knowledge, and operating guidance.
 
-Use this library to:
-
-- orient team members
-- write and improve pages in small steps
-- track changes in GitHub
-- publish updates through the configured site workflow
-
-If you are new here, begin with [Getting Started](/getting-started/). If you want the big picture first, read [FIT Intro](/fit-intro/).
+Need the doc-site guide? Use [Help](/help/). Otherwise open **[Welcome](/fit/)** for the FIT Automate launchpad.
 
 <div class="fit-home-canvas">
   <img src="/images/mountains-abstract.svg" alt="FIT Automate Docs mountainscape preview" />
